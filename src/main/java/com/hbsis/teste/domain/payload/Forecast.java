@@ -13,4 +13,5 @@ public class Forecast extends Response{
 	public int cnt;
 	public java.util.List<List> list;
 	public City city;
+	public boolean isCityOnDatabase;
 }

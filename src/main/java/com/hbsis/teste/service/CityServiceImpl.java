@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.util.List;
 import java.util.Optional;
 
@@ -118,6 +117,9 @@ public class CityServiceImpl implements CityService {
 			else {
 				throw new MalformedURLException("Não foi possivel localizar a cidade");
 			}
+			//Here could be done a check if the city is already registered in the base. 
+			//If so, it adds true to the forecast's isCityOnDatabase,
+			//and the front would no longer let the user send save request
 			return abstractForecast(conn);
 		} catch (IOException e) {
 			return (Forecast) BadRequest.ResponseBadRequest(e, new Forecast());
