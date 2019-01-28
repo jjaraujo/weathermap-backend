@@ -5,7 +5,7 @@
 - Clone o projeto https://github.com/jjaraujo/weathermap-backend.git
 - Importe no eclipse como um Maven Project
 - Faça um update maven no projeto (Alt+F5). 
-- Execute como um Java aplication
+- Execute como um Java application
 
 ## O projeto possui um controlador que escuta os endpoints a seguir:
 - `/city/save: Metodo Post, RequestBody:String city, Response:City`: Recebe um json de city em formato de string, salva e retorna a cidade para usuário
