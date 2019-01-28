@@ -2,6 +2,8 @@
 
 
 - O projeto faz persistência no MongoDB, por isso é necessário a sua instalação. A versão utilizada no projeto foi a 4
+- Inicie o servidor do mongo
+- crie a collection `db.createCollection("alunos")`
 - Clone o projeto https://github.com/jjaraujo/weathermap-backend.git
 - Importe no eclipse como um Maven Project
 - Faça um update maven no projeto (Alt+F5). 
